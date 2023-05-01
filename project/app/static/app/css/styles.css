@@ -1,0 +1,26 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.tel{
+    position: relative;
+    font-size: 19px;
+}
+
+
+a.col{
+    text-decoration: none;
+}
+
+.card-text{
+    text-align: center;
+}
+
+div.col{
+    margin:0 auto
+}

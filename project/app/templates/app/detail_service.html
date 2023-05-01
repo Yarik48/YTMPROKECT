@@ -1,0 +1,32 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="album py-4">
+<div class="container">
+  
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+          <div class="card-body ">
+              <h4 class="card-text">{{ service.title }}</h3>
+              </div>
+              <a href="{{ service.get_absolute_url }}">
+                <img src="{{ service.image.url }}" width="349px">
+              </a>
+          <div class="card-body">
+          <p class="card-text">{{ service.text  }}</p>
+          <div class="d-flex justify-content-between align-items-center">
+              <a href=""><button type="button" class="btn btn-outline-secondary">Заказать</button></a>
+            <h3 class="text-body-secondary">{{ service.price }}$</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      
+
+{% endblock content %}

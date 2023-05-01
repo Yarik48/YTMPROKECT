@@ -1,0 +1,17 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="container">
+<main class="px-5x">
+    <h1>Для заказа услуги</h1>
+    <p class="lead">Обратитесь по ниже указанаму номеру телефону и назовите услугу в данном случае <h3>{{ service.title }}</h3> </p>
+    <p class="lead">
+        <a href="tel: +7 (913) 962-02-02">
+            <button type="button" class="btn btn-lg btn-dark">+7 (913) 962-02-02</button> 
+            </a>
+    </p>
+    
+  </main>
+  </div>
+{% endblock content %}
